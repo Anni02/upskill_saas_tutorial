@@ -28,14 +28,30 @@ background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);  /* Chrome 10-25
 background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+//navbar layout
 
 .navbar {
     border: none;
-}    
+
+}
+
+
 .navbar-header {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-family: 'open sans', sans-serif;
+ font-weight: 800;
+ color:white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+} 
   
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+}
+
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -45,6 +61,7 @@ background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Fi
     opacity: 0.75;
 }
 }
+//home page layout
 .home-callout {
     color: white;
     margin-top: -20px;
