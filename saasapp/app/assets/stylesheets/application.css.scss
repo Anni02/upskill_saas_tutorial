@@ -16,6 +16,8 @@
  
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
 h1, h2, h3 {
     font-family: 'open sans', sans-serif;
 }
@@ -30,23 +32,13 @@ background: linear-gradient(to left, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Fi
     border:none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color:white;
-}
-
-.navbar-default .navbar-brand:hover {
+    &:hover{
     color: white;
     opacity: 0.75;
 }
-.navbar-default .navbar-nav > li > a {
-    color: white;
 }
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 0.75;
-}
-
-
 .home-callout {
     color: white;
     margin-top: -20px;
